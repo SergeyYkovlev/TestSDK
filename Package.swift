@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "TestMySDK",
+    name: "TestSDK",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "TestMySDK",
-            targets: ["TestMySDK"]),
+            name: "TestSDK",
+            targets: ["TestSDK"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "TestMySDK"),
+            name: "TestSDK"),
         .testTarget(
-            name: "TestMySDKTests",
-            dependencies: ["TestMySDK"]),
+            name: "TestSDKTests",
+            dependencies: ["TestSDK"]),
     ]
 )
